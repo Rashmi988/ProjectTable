@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/ProjectTable/",
   build: {
     outDir: "build", // Change the output directory to 'build' instead of 'dist'
   },
