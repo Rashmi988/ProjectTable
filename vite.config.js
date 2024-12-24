@@ -4,6 +4,9 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: "build", // Change the output directory to 'build' instead of 'dist'
+  },
   test: {
     globals: true,
     environment: "jsdom", // Use jsdom to simulate the browser environment
