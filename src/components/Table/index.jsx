@@ -14,8 +14,8 @@ const Table = ({ projects, currencies }) => {
       </thead>
       <tbody>
         {projects?.map((project, index) => (
-          <tr key={project.id}>
-            <td>{index + 1}</td>
+          <tr key={index}>
+            <td>{project['s.no']}</td>
             <td>{project['percentage.funded']}</td>
             <td>{getCurrencySymbol(currencies, project.currency)}{project['amt.pledged']}</td>
           </tr>
